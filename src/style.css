@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    body{
+        @apply mr-0 p-0
+    }
+}
+@layer components{
+
+}
+@layer utilities{
+
+}

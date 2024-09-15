@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/out.css">
+    <title>First tailwindcss</title>
+</head>
+<body>
+    <div class="container  mx-auto px-4">
+        <!-- start the nav bar -->
+        <div class="flex justify-between py-5 items-center relative">
+            <div>
+                <img src="./imgs/logo-light.png " class="w-52" alt="logo">
+            </div>
+            <div class="md:hidden block" id="burger">
+                <img src="./imgs/bars-solid.svg" alt="" class="w-6 cursor-pointer">
+            </div>
+            <div class="md:hidden hidden bg-red-600 absolute left-0 bottom-0 translate-y-full w-full overflow-hidden rounded-3xl" id="list">
+                <div> <a href="#" class="px-3 py-2  duration-200 text-center block bg-slate-500 text-white hover:bg-slate-700">About</a></div>
+                <div> <a href="#" class="px-3 py-2 duration-200 text-center block bg-slate-500 text-white hover:bg-slate-700">Portfolio</a></div>
+                <div> <a href="#" class="px-3 py-2  duration-200 text-center block bg-slate-500 text-white hover:bg-slate-700">Contact</a></div>
+                <div> <a href="#" class="px-3 py-2  duration-200 text-center block bg-slate-500 text-white hover:bg-slate-700">Social</a></div>
+            </div>
+            <div class="md:block hidden">
+                <ul class="flex gap-1">
+                    <li><a href="#" class="px-3 py-2 hover:text-orange-600 duration-200 ">About</a></li>
+                    <li><a href="#" class="px-3 py-2 hover:text-orange-600 duration-200 ">Portfolio</a></li>
+                    <li><a href="#" class="px-3 py-2 hover:text-orange-600 duration-200 ">Contact</a></li>
+                    <li><a href="#" class="px-3 py-2 hover:text-orange-600 duration-200 ">Social</a></li>
+                    <li><a href="#" class="px-3 py-2 bg-orange-600 rounded-full text-white duration-200 hover:bg-slate-800 ">Call me</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end the nav bar -->
+        <!-- start the section that after the nav bar -->
+        <div class=" flex flex-col-reverse md:flex-row my-10 items-center gap-10">
+            <div class="text-center md:w-1/2 md:text-left">
+                <h1 class="text-5xl font-bold mb-5">Rapidly build <br> modern websites without ever leaving your HTML.</h1>
+                <p class="leading-6 mb-6">A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+                <a href="#" class="px-4 py-3 bg-orange-600 rounded-full text-white duration-200 hover:bg-slate-800 ">Get started</a>
+            </div>
+            <div class=" md:w-1/2 ">
+                <img src="./imgs/undraw_learning_sketching_nd4f.svg" alt="">
+            </div>
+        </div>
+        <!-- start the section that after the nav bar -->
+        <!-- start the best practices  -->
+        <div class="my-20">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">“Best practices” don’t actually work.</h1>
+                <p>I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+            </div>
+            <div class="flex flex-col md:flex-row mt-10 gap-10 md:gap-6">
+                <div class=" md:w-1/3 bg-slate-100 p-6 text-center rounded-xl border border-slate-300 hover:bg-white duration-300 ">
+                    <img src="./imgs/adam.jpg" alt="" class="rounded-full m-auto -mt-12 w-16  mb-2">
+                    <h3 class="text-lg font-bold">Adam Sandler</h3>
+                    <p class="text-sm leading-6">The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.</p>
+                </div>
+                <div class=" md:w-1/3 bg-slate-100 p-6 text-center rounded-xl border border-slate-300 hover:bg-white duration-300 ">
+                    <img src="./imgs/madeline.jpg" alt="" class="rounded-full m-auto -mt-12 w-16  mb-2">
+                    <h3 class="text-lg font-bold">Adam Sandler</h3>
+                    <p class="text-sm leading-6">The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.</p>
+                </div>
+                <div class=" md:w-1/3 bg-slate-100 p-6 text-center rounded-xl border border-slate-300 hover:bg-white duration-300 ">
+                    <img src="./imgs/marcel.jpg" alt="" class="rounded-full m-auto -mt-12 w-16 mb-2">
+                    <h3 class="text-lg font-bold">Adam Sandler</h3>
+                    <p class="text-sm leading-6">The way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end the best practices  -->
+    </div>
+    <!-- start the move event  -->
+    <div class="bg-orange-500">
+        <div class=" container flex flex-col md:flex-row items-center mx-auto justify-between p-12">
+            <h1 class="leading-tight text-5xl md:text-4xl font-bold text-white flex-1 text-center md:text-left"  > Move even faster with Tailwind UI.</h1>
+            <a href="#" class="px-5 py-2 bg-white rounded-full text-orange-500 mt-6 md:mt-0 duration-200 hover:bg-slate-800 hover:text-white">Start Here</a>
+        </div>
+    </div>
+    <!-- end the move event  -->
+    <!-- start the footer part -->
+    <div class="bg-slate-900">
+        <div class="container flex items-center mx-auto flex-col-reverse md:flex-row py-10 gap-6 text-white justify-between md:items-stretch">
+            <div class=" ">
+                <p>Copyright © 2023, All Rights Reserved</p>
+                <img src="./imgs/logo-dark.png" alt="" class="w-52 my-9">
+                <div class="flex justify-between">
+                    <img src="./imgs/linkedin-brands-solid.svg" alt="" class="w-7 h-7 cursor-pointer hover:opacity-70 duration-300">
+                    <img src="./imgs/youtube-brands-solid.svg" alt="" class="w-7 h-7 cursor-pointer hover:opacity-70 duration-300" >
+                    <img src="./imgs/twitter-brands-solid.svg" alt="" class="w-7 h-7 cursor-pointer hover:opacity-70 duration-300">
+                    <img src="./imgs/square-facebook-brands-solid.svg" alt="" class="w-7 h-7 cursor-pointer hover:opacity-70 duration-300">
+                    <img src="./imgs/square-instagram-brands-solid.svg" alt="" class="w-7 h-7 cursor-pointer hover:opacity-70 duration-300">
+                </div>
+            </div>
+            <div class=" flex gap-12">
+                <div>
+                    <ul>
+                        <li><a href="#" class="mb-2 block hover:opacity-50 duration-300">Home</a></li>
+                        <li><a href="#" class="mb-2 block hover:opacity-50 duration-300">About</a></li>
+                        <li><a href="#" class=" hover:opacity-50 duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" class="mb-2 block hover:opacity-50 duration-300">Imprint</a></li>
+                        <li><a href="#" class="mb-2 block hover:opacity-50 duration-300">Privacy</a></li>
+                        <li><a href="#" class=" hover:opacity-50 duration-300">Credits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="  w-full flex flex-col justify-between md:w-auto">
+                <div class=" flex items-center gap-3">
+                    <input type="text" placeholder="Subscribe to Newsletter" class="rounded-full flex-1 px-4 py-2 text-black focus:outline-none focus:placeholder:opacity-0 placeholder:duration-300">
+                    <button class="bg-orange-500 px-4 py-2 rounded-full hover:bg-slate-700 duration-300 ">Go</button>
+                </div>
+                <p class="text-center mt-4 md:text-center md:mt-0">Copyright © 2023, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- end the footer part -->
+    <script src="../dist/style.js"></script>
+</body>
+</html>
